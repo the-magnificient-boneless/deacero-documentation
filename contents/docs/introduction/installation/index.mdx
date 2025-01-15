@@ -81,6 +81,12 @@ Use `docker-compose` to install all the required containers for `dev` environmen
   docker-compose down --volumes && docker system prune -a --force --volumes && docker-compose -f docker-compose.dev.yml up --build
 ```
 
+Or If you are using Docker Compose v2 (built into docker), use the command prefixed with docker compose (no hyphen
+
+```
+docker compose -f docker-compose.dev.yml up --build
+```
+
 </StepItem>
 
 <StepItem title="Editing the Project">
